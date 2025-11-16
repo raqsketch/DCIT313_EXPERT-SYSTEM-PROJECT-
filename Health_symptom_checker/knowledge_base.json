@@ -1,0 +1,91 @@
+{
+  "symptoms": [
+    "fever",
+    "cough",
+    "sore throat",
+    "runny nose",
+    "headache",
+    "fatigue",
+    "shortness of breath",
+    "chest pain",
+    "muscle pain",
+    "nausea",
+    "loss of taste or smell",
+    "diarrhea"
+  ],
+  "rules": [
+    {
+      "conditions": [
+        {"symptom": "fever", "min_duration": 3}
+      ],
+      "diagnosis": "Prolonged Fever",
+      "description": "Fever lasting more than three days can indicate a more serious infection.",
+      "advice": "Consult a doctor if fever persists for more than 3 days.",
+      "home_remedies": "Stay hydrated, rest, and use a cold compress."
+    },
+    {
+      "conditions": [
+        {"symptom": "cough"},
+        {"symptom": "sore throat"}
+      ],
+      "diagnosis": "Common Cold",
+      "description": "A combination of cough and sore throat often indicates a common cold.",
+      "advice": "Rest, stay hydrated, and monitor your symptoms.",
+      "home_remedies": "Drink warm tea with honey and gargle salt water."
+    },
+    {
+      "conditions": [
+        {"symptom": "fever"},
+        {"symptom": "cough"},
+        {"symptom": "shortness of breath"}
+      ],
+      "diagnosis": "Possible Pneumonia",
+      "description": "Fever, cough, and difficulty breathing may indicate pneumonia.",
+      "advice": "Seek immediate medical attention.",
+      "home_remedies": "Use a humidifier and drink plenty of fluids."
+    },
+    {
+      "conditions": [
+        {"symptom": "headache"},
+        {"symptom": "fatigue"},
+        {"symptom": "muscle pain"}
+      ],
+      "diagnosis": "Flu",
+      "description": "Flu symptoms include headache, fatigue, and muscle pain.",
+      "advice": "Rest, stay hydrated, and monitor for severe symptoms.",
+      "home_remedies": "Drink ginger tea, take vitamin C, and rest."
+    },
+    {
+      "conditions": [
+        {"symptom": "chest pain", "required_severity": "severe"},
+        {"symptom": "shortness of breath", "required_severity": "severe"}
+      ],
+      "diagnosis": "Critical Cardiac Condition",
+      "description": "Severe chest pain and shortness of breath could indicate a heart attack.",
+      "advice": "Call emergency services immediately.",
+      "home_remedies": "Chew aspirin while waiting for emergency help."
+    },
+    {
+      "conditions": [
+        {"symptom": "loss of taste or smell"},
+        {"symptom": "fever"},
+        {"symptom": "cough"}
+      ],
+      "diagnosis": "COVID-19",
+      "description": "Loss of taste or smell, fever, and cough are symptoms of COVID-19.",
+      "advice": "Get tested for COVID-19 and self-isolate.",
+      "home_remedies": "Stay hydrated, rest, and monitor oxygen levels."
+    },
+    {
+      "conditions": [
+        {"symptom": "diarrhea"},
+        {"symptom": "nausea"},
+        {"symptom": "fatigue"}
+      ],
+      "diagnosis": "Gastroenteritis",
+      "description": "Diarrhea, nausea, and fatigue indicate stomach flu or food poisoning.",
+      "advice": "Drink electrolyte-rich fluids and avoid solid foods until symptoms improve.",
+      "home_remedies": "Drink rice water, ginger tea, or eat bananas."
+    }
+  ]
+}
