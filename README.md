@@ -1,1 +1,3 @@
 # DCIT313_EXPERT-SYSTEM-PROJECT-
+The aim of this project was to develop an expert system that assists users in determining potential health conditions based on their symptoms. The system will ask users a series of questions regarding their symptoms and medical history to suggest possible ailments and recommend whether to consult a healthcare professional. This project will enable students to apply their knowledge of computing principles to build a practical solution that has real-world applications in healthcare. By developing the Health Symptom Checker, 
+students will enhance their skills in programming, user-centered design, and system analysis, preparing them for future challenges in technology and healthcare.
